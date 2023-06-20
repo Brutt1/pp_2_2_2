@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<div>
+  <h1>List of Cars (cars.html)</h1>
+  <h1>We output <th:block th:text="${countCars}"></th:block> cars</h1>
+  <br>
+  <th:block th:each="msg : ${cars}">
+    <h1 th:text="${msg}"></h1>
+  </th:block>
+
+</div>
+</body>
+</html>
